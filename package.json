@@ -1,0 +1,31 @@
+{
+  "name": "aframe-learning",
+  "version": "1.0.0",
+  "description": "Me learning A frame",
+  "main": "index.js",
+  "dependencies": {
+    "aframe": "^0.8.0",
+    "webpack": "^4.1.1",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "raw-loader": "^0.5.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerMcKenzie/aframe-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerMcKenzie/aframe-learning/issues"
+  },
+  "homepage": "https://github.com/TylerMcKenzie/aframe-learning#readme"
+}
