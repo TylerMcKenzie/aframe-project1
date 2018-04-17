@@ -2,7 +2,7 @@
   "name": "aframe-learning",
   "version": "1.0.0",
   "description": "Me learning A frame",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "aframe": "^0.8.0",
     "aframe-room-component": "^0.3.0",
@@ -15,6 +15,7 @@
     "webpack-cli": "^2.0.11"
   },
   "scripts": {
+    "start": "npm run build && node server.js",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
