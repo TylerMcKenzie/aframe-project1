@@ -2,7 +2,8 @@
 require('./index.html');
 
 // Pull in the aframe library
-require('aframe');
+//require('aframe');
+import AFRAME from 'aframe';
 
 // Your code goes down here.
-
+import room from "aframe-room-component";
