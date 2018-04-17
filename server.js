@@ -29,8 +29,8 @@ const server = http.createServer((req, res) => {
 	} else {
 		if(/.*\.js$/.test(req.url.toString())) {
 			fetchJs(req, res, req.url);
-		} else {
-			fs.readFile(file, (err, data) => {
+		} else if(/.*\.ico/.test(req.url.toString())) {
+			fs.readFile(req.url, (err, data) => {
 				if(err) {
 					res.writeHead(404);
 					res.write("Not Found!");
@@ -40,8 +40,13 @@ const server = http.createServer((req, res) => {
 				}
 				res.end();
 			})
-		}
+		} else {
+			res.writeHead(404);
+			res.write("404 Not Found.");
+			res.end();
+		} 
 	}
+
 });
 
 server.listen(3000)
