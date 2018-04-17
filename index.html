@@ -9,8 +9,22 @@
     <script type="text/javascript" src="app.bundle.js"></script>
   </head>
   <body>
+
     <!-- Empty scene -->
+
     <a-scene>
+
+      <rw-room position="-5 0 -5" material="color:#ECECEC">
+          <rw-ceiling></rw-ceiling>
+          <rw-wall position="10 0 0" height="5" width="2"></rw-wall>
+          <rw-wall position="10 0 10" height="5" width="2"></rw-wall>
+          <rw-wall position="0 0 10" height="5" width="2"></rw-wall>
+          <rw-wall position="0 0 0" height="5" width="2"></rw-wall>
+          <rw-floor></rw-floor>
+      </rw-room>
+      <a-light type="point" position="0 4.5 0"></a-light>
+    </a-scene>
+<!--    <a-scene>
       <a-camera></a-camera>
       <a-entity>
         <a-plane position="0 0 0" ></a-plane>
@@ -18,6 +32,6 @@
         <a-plane></a-plane>
         <a-plane></a-plane>
       </a-entity>
-    </a-scene>
+</a-scene> -->
   </body>
 </html>
