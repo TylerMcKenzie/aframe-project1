@@ -2,6 +2,8 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
+const port = process.env.PORT || 3000;
+
 const fetchJs = (req, res, file) => {
 	fs.readFile("./build" + file, (err, data) => {
 		if(err) {
@@ -49,4 +51,4 @@ const server = http.createServer((req, res) => {
 
 });
 
-server.listen(3000)
+server.listen(port);
